@@ -3,16 +3,18 @@ is a reliable and extendable **Joomla! System Plugin for template developers to 
 
 -
 In the the front end of Joomla! some extensions is calling the function JHTML::_('behavior.tooltip'),
-which adds javascript code to html head. In some cases hasTooltip is associated and runns in browser console errors.
+which adds JavaScript code to html head. In some cases hasTooltip is associated and runns in browser console errors.
 This Plugin unsets bootstrap js files and also removes bootstraps hasTooltip function from front end, to avoid console errror.
 
 This Plugin use the following snippet to remove:
 
     jQuery('.hasTooltip').tooltip({"html": true,"container": "body"});
 
-If you know what you're doing, you can change the following snipped at plugin settings if it differs from your version! 
+If you know what you're doing, you can change the following snipped at plugin settings if it differs from your version!
 
     {"html": true,"container": "body"}
+
+**Note:** It is not recommended to use together with Joomla! default templates like tpl_Protostar!
 
 # System requirements
 Joomla 3.x +                                                                                <br>
