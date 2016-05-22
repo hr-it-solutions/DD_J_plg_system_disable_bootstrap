@@ -9,7 +9,10 @@ This Plugin unsets bootstrap js files and also removes bootstraps hasTooltip fun
 This Plugin use the following snippet to remove:
 
     jQuery('.hasTooltip').tooltip({"html": true,"container": "body"});
-If you know what you're doing, you can change the text in the plugin settings if it differs from your version!
+
+If you know what you're doing, you can change the following snipped at plugin settings if it differs from your version! 
+
+    {"html": true,"container": "body"}
 
 # System requirements
 Joomla 3.5.+                                                                                <br>
