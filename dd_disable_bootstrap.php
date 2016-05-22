@@ -48,7 +48,6 @@ class plgSystemDD_Disable_Bootstrap extends JPlugin
 			if ($this->params->get('toreplace') !== '{"html": true,"container": "body"}'){
 				$value = array("(",")"); // Securety fix, remove opening braces
 				$toreplace = str_replace($value,"",$this->params->get('toreplace'));
-				die($toreplace);
 			} else {
 				$toreplace = $this->behavior_tooltip;
 			}
