@@ -2,7 +2,7 @@
 is a Joomla! system plugin to disable Bootstrap from the front end!
 
 # System requirements
-Joomla 3.5.+
+Joomla 3.5.+                                                                                <br>
 PHP 5.6.13 or newer is recommended.
 
 # DD_ Namespace
