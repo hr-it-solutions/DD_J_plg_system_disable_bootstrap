@@ -15,7 +15,7 @@ If you know what you're doing, you can change the following snipped at plugin se
     {"html": true,"container": "body"}
 
 # System requirements
-Joomla 3.5.+                                                                                <br>
+Joomla 3.x +                                                                                <br>
 PHP 5.6.13 or newer is recommended.
 
 # DD_ Namespace
