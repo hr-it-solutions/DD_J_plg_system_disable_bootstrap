@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_DD_DISABLE_BOOTSTRAP</name>
+    <version>1.2.0.0</version>
+    <creationDate>22.05.2016</creationDate>
+    <author>Didldu e.K. Florian Häusler</author>
+    <authorEmail>info@hr-it-solutions.com</authorEmail>
+    <authorUrl>Didldu e.K. Florian Häusler https://www.hr-it-solution.com</authorUrl>
+    <copyright>Copyright (C) 2011 - 2016 Didldu e.K. | HR IT-Solutions</copyright>
+    <license>GNU/GPLv2 only</license>
+    <description>PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="dd_disable_bootstrap">dd_disable_bootstrap.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_dd_disable_bootstrap.sys.ini</language>
+    </languages>
+    <updateservers>
+        <server type="collection" priority="1" name="HR IT-Solutions Updates">http://www.hr-it-solutions.com/jextensions/update.xml</server>
+    </updateservers>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="toreplace" type="text" default='{"html": true,"container": "body"}' label="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_TOREPLACE_LBL" description="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_TOREPLACE_DESC" filter="raw" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
