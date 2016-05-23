@@ -1,6 +1,6 @@
 <?php
 /**
- * @version    1-2-0-0 // Y-m-d 2016-05-14
+ * @version    1-3-0-0 // Y-m-d 2016-05-14
  * @author     Didldu e.K. Florian Häusler https://www.hr-it-solution.com
  * @copyright  Copyright (C) 2011 - 2016 Didldu e.K. | HR IT-Solutions
  * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
