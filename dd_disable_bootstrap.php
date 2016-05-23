@@ -39,13 +39,14 @@ class plgSystemDD_Disable_Bootstrap extends JPlugin
 
 	public function onAfterRender()
 	{
-				$app = JFactory::getApplication();
+		$app = JFactory::getApplication();
 
 		// Front end
 		if ($app instanceof JApplicationSite)
 		{
 			// check plugin parameter to replace
-			if ($this->params->get('toreplace') !== '{"html": true,"container": "body"}'){
+			if ($this->params->get('toreplace') !== '{"html": true,"container": "body"}')
+			{
 				$value = array("(",")"); // Securety fix, remove opening braces
 				$toreplace = str_replace($value,"",$this->params->get('toreplace'));
 			} else {
