@@ -2,9 +2,9 @@
 is a reliable and extendable **Joomla! System Plugin for template developers to disable Bootstrap** from the front end!
 
 -
-In the front end of Joomla! some extensions is calling the function JHTML::_('behavior.tooltip'),
-which adds JavaScript code to html head. In some cases hasTooltip is associated and runns in browser console errors.
-This Plugin unsets bootstrap js files and also removes bootstraps hasTooltip function from front end, to avoid console errror.
+In the front end of Joomla! some extensions calling the function JHTML::_('behavior.tooltip'),
+which adds JavaScript code to html head. To avaiod this manually by hard coding, in some cases hasTooltip is associated and runns in browser console errors.
+Here DD Disable Bootstrap helps: This Plugin unsets Bootstrap JavaScript files and also removes Bootstrap hasTooltip function from front end, to avoid console errror.
 
 This Plugin use the following snippet to remove:
 
