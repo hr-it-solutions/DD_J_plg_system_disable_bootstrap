@@ -39,7 +39,7 @@ class plgSystemDD_Disable_Bootstrap extends JPlugin
 
 	public function onAfterRender()
 	{
-				$app = JFactory::getApplication();
+		$app = JFactory::getApplication();
 
 		// Front end
 		if ($app instanceof JApplicationSite)
