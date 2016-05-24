@@ -1,5 +1,5 @@
 # DD_J_plg_system_disable-bootstrap
-is a reliable and extendable **Joomla! System Plugin for template developers to disable Bootstrap** from the front end!
+is a reliable and extendable **Joomla! system plugin for template developers to disable Bootstrap** from the front end!
 
 -
 In the front end of Joomla! some extensions calling the function JHTML::_('behavior.tooltip'),
