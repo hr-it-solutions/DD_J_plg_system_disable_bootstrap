@@ -15,7 +15,7 @@ If you know what you're doing, you can change the following snipped at plugin se
 
     {"html": true,"container": "body"}
 
-**Note:** It is not recommended to use together with Joomla! default templates like tpl_Protostar!
+**Note:** It is not recommended to use together with Joomla! default templates like tpl_Protostar or any other template based on Bootstrap
 
 # System requirements
 Joomla 3.x +                                                                                <br>
