@@ -1,5 +1,7 @@
 # DD_J_plg_system_disable-bootstrap
-is a reliable and extendable **Joomla! system plugin for template developers to disable Bootstrap** from the front end!
+is a reliable and extendable **Joomla! system plugin for template developers to disable Bootstrap** from the front end! 
+
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=102)](https://github.com/ellerbrock/open-source-badge/) [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)  
 
 -
 In the front end of Joomla! some extensions calling the function JHTML::_('behavior.tooltip'), which adds Bootstrap JavaScript to html head. To avaiod this manually by hard coding, your scripts could be broken because of an assigned "jQuery hasTooltip" function.
