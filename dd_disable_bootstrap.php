@@ -1,7 +1,7 @@
 <?php
 /**
- * @version    1-3-0-0 // Y-m-d 2016-05-14
- * @author     Didldu e.K. Florian Häusler https://www.hr-it-solutions.com
+ * @version    1-3-0-1 // Y-m-d 2016-05-14
+ * @author     HR IT-Solutions Florian Häusler https://www.hr-it-solutions.com
  * @copyright  Copyright (C) 2011 - 2016 Didldu e.K. | HR IT-Solutions
  * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
  **/
@@ -53,7 +53,7 @@ class plgSystemDD_Disable_Bootstrap extends JPlugin
 			}
 
 			// Remove bootstrap associated .tooltip global from <head> which is added by JHtml::_('behavior.tooltip');
-			$html = str_replace('jQuery(\'.hasTooltip\').tooltip(' . $toreplace . ');', '', $app->getBody());
+			$html = preg_replace("/jQuery(.+)\.tooltip\(.+\)\;/i", "<!-- Removed tooltip -->", $app->getBody());
 
 			$app->setBody($html);
 		}
