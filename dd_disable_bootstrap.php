@@ -1,6 +1,6 @@
 <?php
 /**
- * @version    1-3-0-1 // Y-m-d 2016-05-14
+ * @version    1-3-1-0 // Y-m-d 2017-02-26
  * @author     HR IT-Solutions Florian Häusler https://www.hr-it-solutions.com
  * @copyright  Copyright (C) 2011 - 2016 Didldu e.K. | HR IT-Solutions
  * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
@@ -17,6 +17,8 @@ jimport('joomla.access.access');
 class plgSystemDD_Disable_Bootstrap extends JPlugin
 {
 
+	protected $app;
+
 	/**
 	 * @var string
 	 * Joomla 3.x
@@ -26,10 +28,8 @@ class plgSystemDD_Disable_Bootstrap extends JPlugin
 	
 	public function onBeforeCompileHead()
 	{
-		$app = JFactory::getApplication();
-
 		// Front end
-		if ($app instanceof JApplicationSite)
+		if ($this->app instanceof JApplicationSite)
 		{
 			$doc = JFactory::getDocument();
 			// Remove default bootstrap
@@ -39,10 +39,9 @@ class plgSystemDD_Disable_Bootstrap extends JPlugin
 
 	public function onAfterRender()
 	{
-		$app = JFactory::getApplication();
 
 		// Front end
-		if ($app instanceof JApplicationSite)
+		if ($this->app instanceof JApplicationSite)
 		{
 			// check plugin parameter to replace
 			if ($this->params->get('toreplace') !== '{"html": true,"container": "body"}'){
@@ -53,9 +52,9 @@ class plgSystemDD_Disable_Bootstrap extends JPlugin
 			}
 
 			// Remove bootstrap associated .tooltip global from <head> which is added by JHtml::_('behavior.tooltip');
-			$html = preg_replace("/jQuery(.+)\.tooltip\(.+\)\;/i", "<!-- Removed tooltip -->", $app->getBody());
+			$html = preg_replace("/jQuery(.+)\.tooltip\(.+\)\;/i", "<!-- Removed tooltip -->", $this->app->getBody());
 
-			$app->setBody($html);
+			$this->app->setBody($html);
 		}
 	}
 }
