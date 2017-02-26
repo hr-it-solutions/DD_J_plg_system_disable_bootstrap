@@ -23,25 +23,25 @@
         <fields name="params">
             <fieldset name="basic">
                 <field name="toreplace" type="text" default='{"html": true,"container": "body"}' label="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_TOREPLACE_LBL" description="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_TOREPLACE_DESC" filter="raw" />
+                <field name="remove_snipped"
+                       type="radio"
+                       default="0"
+                       label="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_REMOVE_SNIPPED_CLASS_LBL"
+                       description="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_REMOVE_SNIPPED_CLASS_LBL"
+                       class="btn-group" >
+                    <option value="1">JENABLED</option>
+                    <option value="0">JDISABLED</option>
+                </field>
+                <field name="remove_hastooltip_class"
+                       type="radio"
+                       default="0"
+                       label="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_REMOVE_HASTOOLTIP_CLASS_LBL"
+                       description="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_REMOVE_HASTOOLTIP_CLASS_LBL"
+                       class="btn-group" >
+                    <option value="1">JENABLED</option>
+                    <option value="0">JDISABLED</option>
+                </field>
             </fieldset>
-            <field name="remove_snipped"
-                   type="radio"
-                   default="0"
-                   label="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_REMOVE_SNIPPED_CLASS_LBL"
-                   description="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_REMOVE_SNIPPED_CLASS_LBL"
-                   class="btn-group" >
-                <option value="1">JENABLED</option>
-                <option value="0">JDISABLED</option>
-            </field>
-            <field name="remove_hastooltip_class"
-                   type="radio"
-                   default="0"
-                   label="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_REMOVE_HASTOOLTIP_CLASS_LBL"
-                   description="PLG_SYSTEM_DD_DISABLE_BOOTSTRAP_REMOVE_HASTOOLTIP_CLASS_LBL"
-                   class="btn-group" >
-                <option value="1">JENABLED</option>
-                <option value="0">JDISABLED</option>
-            </field>
         </fields>
     </config>
 </extension>
