@@ -53,11 +53,20 @@ class plgSystemDD_Disable_Bootstrap extends JPlugin
 				// Remove bootstrap associated .tooltip global from <head> which is added by JHtml::_('behavior.tooltip');
 				$html = str_replace('jQuery(\'.hasTooltip\').tooltip(' . $toreplace . ');', '', $this->app->getBody());
 
-			} else {
+			}
+			else
+			{
 
 				// Remove bootstrap associated .tooltip global from <head> which is added by JHtml::_('behavior.tooltip');
 				$html = preg_replace("/jQuery(.+)\.tooltip\(.+\)\;/i", "<!-- Removed tooltip -->", $this->app->getBody());
 
+			}
+
+			// check plugin parameter to remove hasTooltip CSS class
+			if ($this->params->get('remove_hastooltip_class',1))
+			{
+				// Try to remove all associated JS CSS .tooltip classes to avoid TypeError: $(...).tooltip is not a function.
+				$html = str_replace(' hasTooltip"', ' "', $html);
 			}
 
 			$this->app->setBody($html);
