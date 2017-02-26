@@ -66,7 +66,7 @@ class plgSystemDD_Disable_Bootstrap extends JPlugin
 			if ($this->params->get('remove_hastooltip_class',1))
 			{
 				// Try to remove all associated JS CSS .tooltip classes to avoid TypeError: $(...).tooltip is not a function.
-				$html = str_replace(' hasTooltip"', ' "', $html);
+				$html = str_replace(' hasTooltip"', ' "', $html); // todo-DD! #21 replace str_replace with preg_replace regex to remove only hasTooltip in CSSclass attributes, but not other class names
 			}
 
 			$this->app->setBody($html);
