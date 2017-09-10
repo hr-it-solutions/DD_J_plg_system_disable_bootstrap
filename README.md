@@ -1,5 +1,5 @@
 # DD_J_plg_system_disable_bootstrap
-is a reliable and extendable **Joomla! system plugin for template developers to disable Bootstrap** from the front end! 
+is a **Joomla! system plugin for template developers to disable Bootstrap** from the front end!
 
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)  
 
